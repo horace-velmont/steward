@@ -1,10 +1,8 @@
-package nation.model;
+package com.the.world.model;
 
-import core.model.BaseEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import territory.model.Territory;
 
 @Getter
 @Setter

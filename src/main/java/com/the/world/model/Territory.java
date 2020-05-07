@@ -1,4 +1,4 @@
-package territory.model;
+package com.the.world.model;
 
 import lombok.Builder;
 import lombok.Getter;

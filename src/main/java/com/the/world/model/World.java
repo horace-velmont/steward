@@ -1,15 +1,12 @@
-package world.model;
+package com.the.world.model;
 
-
-import nation.model.Nation;
-import territory.model.Territory;
 
 public class World {
     public void start() {
-        // make 3 nation
+        // make 3 com.the.world.nation
         this.generateNations();
 
-        // nation war random percentage by percentage Factory
+        // com.the.world.nation war random percentage by percentage Factory
         this.percentageFight();
 
     }
