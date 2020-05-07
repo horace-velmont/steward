@@ -7,7 +7,7 @@ public class World {
         this.generateNations();
 
         // com.the.world.nation war random percentage by percentage Factory
-        this.percentageFight();
+        //this.percentageFight();
 
     }
 

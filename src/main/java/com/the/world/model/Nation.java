@@ -9,7 +9,7 @@ import lombok.Setter;
 @Builder
 public class Nation extends BaseEntity {
     @Builder.Default
-    private String name;
+    private String name = "";
     @Builder.Default
-    private Territory territory;
+    private Territory territory = Territory.builder().build();
 }

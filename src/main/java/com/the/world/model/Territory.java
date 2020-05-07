@@ -9,11 +9,11 @@ import lombok.Setter;
 @Setter
 public class Territory {
     @Builder.Default
-    private int x;
+    private int x = 0;
     @Builder.Default
-    private int y;
+    private int y = 0;
     @Builder.Default
-    private int width;
+    private int width = 0;
     @Builder.Default
-    private int height;
+    private int height = 0;
 }
