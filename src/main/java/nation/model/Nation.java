@@ -1,4 +1,4 @@
-package nation.model.entity;
+package nation.model;
 
 import core.model.BaseEntity;
 import lombok.Getter;
