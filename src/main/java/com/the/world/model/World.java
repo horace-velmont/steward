@@ -1,6 +1,8 @@
 package com.the.world.model;
 
 
+import org.springframework.scheduling.annotation.Scheduled;
+
 public class World {
     public void start() {
         // make 3 com.the.world.nation
@@ -8,6 +10,11 @@ public class World {
 
         // com.the.world.nation war random percentage by percentage Factory
         //this.percentageFight();
+
+    }
+
+    @Scheduled(initialDelay = 10000, cron="0 0 * * * *")
+    private void percentageFight() {
 
     }
 
