@@ -21,7 +21,7 @@ apply plugin: 'io.spring.dependency-management'
 group 'com.the.world'
 version '1.0-SNAPSHOT'
 apply plugin: 'application'
-mainClassName = 'com.the.wolrd.WorldApplication'
+mainClassName = 'com.the.world.WorldApplication'
 
 sourceCompatibility = 1.8
 

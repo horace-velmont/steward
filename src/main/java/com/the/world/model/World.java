@@ -15,7 +15,9 @@ public class World {
 
     @Scheduled(initialDelay = 10000, cron="0 0 * * * *")
     private void percentageFight() {
-
+        if (Math.random() > 0.5) {
+            System.out.println("fight!");
+        }
     }
 
     private void generateNations() {
