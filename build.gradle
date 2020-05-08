@@ -29,6 +29,11 @@ repositories {
     mavenCentral()
 }
 
+bootRun() {
+    String activeProfile = System.properties['spring.profiles.active']
+    systemProperty "spring.profiles.active", activeProfile
+}
+
 dependencies {
     implementation "io.github.cdimascio:java-dotenv:5.1.4"
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
