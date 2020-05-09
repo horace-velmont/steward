@@ -2,7 +2,9 @@ package com.the.world.model;
 
 
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
+@Component
 public class World {
     public void start() {
         // make 3 com.the.world.nation
@@ -13,9 +15,11 @@ public class World {
 
     }
 
-    @Scheduled(initialDelay = 10000, cron="0 0 * * * *")
+    @Scheduled(cron = "0/1 * * * * *")
     private void percentageFight() {
-        if (Math.random() > 0.5) {
+        double rand = Math.random();
+        System.out.println("rand : " + rand);
+        if (rand > 0.5) {
             System.out.println("fight!");
         }
     }
