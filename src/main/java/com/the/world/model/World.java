@@ -1,12 +1,21 @@
 package com.the.world.model;
 
 
+import lombok.Getter;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 @Component
+@Getter
 public class World {
+    private List<Nation> nationList;
+
     public void start() {
+        nationList = new ArrayList<>();
         // make 3 com.the.world.nation
         this.generateNations();
 
@@ -20,7 +29,9 @@ public class World {
         double rand = Math.random();
         System.out.println("rand : " + rand);
         if (rand > 0.5) {
-            System.out.println("fight!");
+            Nation nation = nationList.get(0);
+            Nation nation2 = nationList.get(1);
+            System.out.println("fight! : "+ nation.getName() + " vs " + nation2.getName());
         }
     }
 
@@ -36,5 +47,7 @@ public class World {
         Nation japan = Nation.builder().name("japan").territory(
                 Territory.builder().x(120).y(-20).width(80).height(120).build()
         ).build();
+
+        nationList.addAll(Arrays.asList(korea, china, japan));
     }
 }
