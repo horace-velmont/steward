@@ -20,11 +20,9 @@ public class World {
         this.generateNations();
 
         // com.the.world.nation war random percentage by percentage Factory
-        //this.percentageFight();
-
+        this.percentageFight();
     }
 
-    @Scheduled(cron = "0/1 * * * * *")
     private void percentageFight() {
         double rand = Math.random();
         System.out.println("rand : " + rand);
